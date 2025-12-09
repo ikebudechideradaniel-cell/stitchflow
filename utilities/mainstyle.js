@@ -1,10 +1,171 @@
-import { StyleSheet } from "react-native";
-
-
+import { StyleSheet,Dimensions } from "react-native";
+const screenWidth = Dimensions.get("window")
+import {appcolours}from "../utilities/apptheme"
     
 export const appstyles = StyleSheet.create({
     bgstyles:{
         flex: 1
-    }
-})
+    },
+    headerView:{
+        backgroundColor:"white",
+    },
+    Appname:{
+        fontSize:30,
+        textAlign:"center",
+        color:appcolours.navy,
+        fontWeight:"800"
 
+    },
+    Introtext:{
+        fontSize:13,
+        textAlign:"center",
+        color:appcolours.darkblue,
+    },
+    areaView:{
+        display:"flex",
+        backgroundColor:"white",
+        justifyContent:"space-between",
+        flex:1,
+        marginBottom:20
+    },
+    getstartedView:{
+        display:"flex",
+        width:"100%",
+        height:50,
+        backgroundColor:appcolours.navy,
+        alignItems:"center",
+        justifyContent:"center",
+        borderRadius:100
+    },
+    linkText:{
+        color:"white",
+        fontSize:20
+    },
+    flatimg:{
+        width:screenWidth
+    },
+    headerView:{
+        display:"flex",
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    headertext:{
+        fontSize:30,
+        color: appcolours.navy,
+        letterSpacing:4.9,
+        textAlign:"center",
+        fontWeight:"900",
+        fontFamily:"AngelicaSignatureDemo"
+
+    },
+    designername:{
+        fontSize:16,
+        fontWeight:"bold",
+        color:appcolours.darkblue,
+
+    },
+    iconDisply:{
+        display:"flex",
+        flexDirection:"row",
+        gap:10
+    },
+    iconview:{
+        display:"flex",
+        flexDirection:"row",
+        justifyContent:"space-between",
+        alignItems:"center"
+    },
+    imgview:{
+        height:500,
+        width:screenWidth,
+        paddingVertical:2
+    },
+    Introtext2:{
+        fontSize:20,
+        textAlign:"center",
+        color:appcolours.darkblue,
+        paddingBottom:10
+    },
+    // measurment styles 
+
+    scrollcontent:{
+
+    },
+    meaureheader:{
+        marginBottom:30,
+    },
+    title:{
+        fontSize:30,
+        textAlign:"center",
+        fontWeight:"800",
+        color:appcolours.navy
+    },
+    subtitle:{
+        fontSize:18,
+        color:appcolours.darkblue,
+        textAlign:"center",
+    },
+    gendersection:{
+        marginBottom:24,
+
+    },
+    gendertitle:{
+        fontSize:15,
+        fontWeight:"bold",
+        color:appcolours.darkblue,
+        marginBottom:12,
+        textAlign:"center"
+    },
+    genderView:{
+        display:"flex",
+        flexDirection:"row",
+        gap:13,
+        justifyContent:"center",
+        alignItems:"center",
+    },
+    genderbtn:{
+        width:150,
+        borderWidth:2,
+        backgroundColor:appcolours.grey,
+        borderColor:appcolours.darkblue,
+        paddingVertical:12,
+        borderRadius:8,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    genderbtnactive:{
+        backgroundColor:appcolours.navy,
+        borderColor:appcolours.red,
+    },
+    gendertext:{
+        fontSize:15,
+        fontWeight:"600",
+        color:appcolours.darkblue
+    },
+    gendertextactive:{
+         color:"white"
+    },
+    unitbtn:{
+         width:150,
+        borderWidth:2,
+        backgroundColor:appcolours.grey,
+        borderColor:appcolours.navy,
+        paddingVertical:12,
+        borderRadius:8,
+        alignItems:"center",
+        justifyContent:"center"
+    },
+    unitbtnactive:{
+        backgroundColor:appcolours.navy,
+        borderColor:appcolours.red,
+    },
+    unittext:{
+        fontSize:15,
+        fontWeight:"600",
+        color:appcolours.darkblue 
+    },
+    unittextactive:{
+        color:"white"
+    }
+
+})

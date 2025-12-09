@@ -1,6 +1,7 @@
 import { SafeAreaView,SafeAreaProvider } from "react-native-safe-area-context";
 import { View,Text,Image,StyleSheet,Dimensions } from "react-native";
 import { Link } from "expo-router";
+import {appstyles} from "../utilities/mainstyle"
 
 const screenWidth = Dimensions.get("window")
 
@@ -8,26 +9,26 @@ const screenWidth = Dimensions.get("window")
  export default function Index (){
   return(
     <SafeAreaProvider>
-      <SafeAreaView>
+      <SafeAreaView style={appstyles.areaView}>
         {/* header*/}
-    <View>
-      <Text>STITCH FLOW</Text>
-      <Text>your fashion partner</Text>
+    <View style={appstyles.headerView}>
+      <Text style={appstyles.Appname}>STITCH FLOW</Text>
+      <Text style={appstyles.Introtext}>your fashion partner</Text>
     </View>
     {/*body*/}
-    <View>
+    <View style={appstyles.imgview}>
       <Image
        source = {require("../assets/images/stitchlg.png")}
        style={mystyles.logo}
       />
       </View>
-      <View>
-      <Text>when you choose stitch flow fashion you are choosing ease,comfort and reliability</Text>
+      <View style={mystyles.intro}>
+      <Text style={appstyles.Introtext2}>when you choose stitch flow fashion, you' choosing ease,comfort and reliability</Text>
     </View>
     {/* bottom */}
-    <View>
-      <Link href={""}>
-      <Text>GET STARTED</Text>
+    <View style={{paddingHorizontal:30}}>
+      <Link href="/(tabs)/homepage">
+      <View style={appstyles.getstartedView}><Text style={appstyles.linkText}>GET STARTED</Text></View>
       </Link>
     </View>
       </SafeAreaView>
@@ -38,7 +39,15 @@ const screenWidth = Dimensions.get("window")
 const mystyles = StyleSheet.create({
   logo:{
     width:screenWidth,
-    height:420
+    height:420,
+    paddingVertical:30,
+    backgroundColor:"white",
+    resizeMode:"contain"
+  },
+  intro:{
+    paddingBottom:30,
+    paddingVertical:10,
   }
 
 })
+
