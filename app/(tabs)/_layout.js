@@ -7,7 +7,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
         <Tabs.Screen
         name="homepage"
         options={{
-            headerShown:true,
+            headerShown:false,
             title:"FEEDS",
             tabBarIcon: () => <MaterialCommunityIcons name="home-heart" size={24} color="black" />
              
@@ -16,7 +16,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
         <Tabs.Screen
         name="measurments"
         options={{
-            headerShown:true,
+            headerShown:false,
             title:"measurments",
             tabBarIcon: () => <MaterialCommunityIcons name="tape-measure" size={24} color="black" />
         }}
@@ -24,7 +24,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
         <Tabs.Screen
         name="history"
         options={{
-            headerShown:true,
+            headerShown:false,
             title:"history",
             tabBarIcon: () => <MaterialCommunityIcons name="history" size={24} color="black"/>
         }}
@@ -32,7 +32,7 @@ import Ionicons from '@expo/vector-icons/Ionicons';
         <Tabs.Screen
         name="settings"
         options={{
-            headerShown:true,
+            headerShown:false,
             title:"settings",
             tabBarIcon : () => <Ionicons name="settings" size={24} color="black" />
         }}

@@ -89,7 +89,8 @@ export const appstyles = StyleSheet.create({
     // measurment styles 
 
     scrollcontent:{
-
+        paddingBottom:50,
+        paddingVertical:10
     },
     meaureheader:{
         marginBottom:30,
@@ -98,7 +99,8 @@ export const appstyles = StyleSheet.create({
         fontSize:30,
         textAlign:"center",
         fontWeight:"800",
-        color:appcolours.navy
+        color:appcolours.navy,
+        fontFamily:"AvegasRoyale-Bold"
     },
     subtitle:{
         fontSize:18,
@@ -166,6 +168,80 @@ export const appstyles = StyleSheet.create({
     },
     unittextactive:{
         color:"white"
-    }
+    },
+    // measument inputs
+
+    inputTitle:{
+        fontSize:18,
+        fontWeight:"700",
+        color:appcolours.navy,
+        marginBottom:8
+    },
+    unit:{
+       fontSize:14,
+       color:appcolours.navy,
+       marginBottom:12 
+    },
+    label:{
+        fontSize:16,
+        fontWeight:"800",
+        color:appcolours.darkblue,
+        marginBottom:6
+    },
+    inputwrapper:{
+        flexDirection:"row",
+        alignItems:"center",
+        borderWidth:1,
+        borderColor:appcolours.grey,
+        borderRadius:10,
+        backgroundColor:appcolours.darkblue
+    },
+    section:{
+        marginBottom:24,
+        paddingHorizontal:20
+    },
+    inputfield:{
+        flex:1,
+        paddingVertical:12,
+        paddingHorizontal:12,
+        fontSize:15,
+        color:"white",
+        fontWeight:"400"
+    },
+    munit:{
+        paddingRight:10
+    },
+    // cta styles 
+
+     ctaview:{
+        display:"flex",
+         flexDirection:"row",
+         justifyContent:"space-evenly",
+         flex:1,
+
+     },
+     savebtn:{
+        width:150,
+        height:50,
+        backgroundColor:appcolours.darkblue,
+        borderRadius:100,
+        justifyContent:"center",
+        alignItems:"center",
+        paddingBottom:30
+     },
+     resetbtn:{
+        width:150,
+        height:50,
+        backgroundColor:appcolours.darkblue,
+        borderRadius:100,
+        justifyContent:"center",
+        alignItems:"center",
+        paddingBottom:30
+     },
+     ctatext:{
+        color:"white",
+        fontSize:17,
+        fontWeight:800,
+     }
 
 })

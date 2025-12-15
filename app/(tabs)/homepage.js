@@ -5,7 +5,7 @@ import { eventData } from "../../assets/images/localdata/fashionstyles";
 import {appstyles} from "../../utilities/mainstyle"
 import { TouchableOpacity } from "react-native";
 import AntDesign from '@expo/vector-icons/AntDesign';
-import { useFonts } from "expo-font";
+
 
 
 function ImageSeperator(){
@@ -20,17 +20,7 @@ function ImageSeperator(){
 }
 
 export default function Homepage (){
-    const [fontsLoaded] = useFonts({
-        "AvegasRoyale-Bold":require("../../assets/images/fonts/AvegasRoyale-Bold.ttf"),
-        "AvegasRoyale-BoldItalic":require("../../assets/images/fonts/AvegasRoyale-BoldItalic.ttf"),
-        "AvegasRoyale-Italic":require("../../assets/images/fonts/AvegasRoyale-Italic.ttf"),
-        "ReilycElegantDemo-Regular":require("../../assets/images/fonts/ReilycElegantDemo-Regular.otf"),
-        "AngelicaSignatureDemo":require("../../assets/images/fonts/AngelicaSignatureDemo.otf"),
-        // "TYPEW___":require("../../assets/images/fonts/TYPEW___ttf")
-    }) 
-    if(!fontsLoaded){
-        return null 
-    }   
+    
     return(
        <SafeAreaProvider>
           <SafeAreaView>
